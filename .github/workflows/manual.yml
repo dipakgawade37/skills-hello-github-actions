@@ -1,0 +1,20 @@
+
+name: Lesson 2 - First Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    name: Run Linux Commands
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display a greeting
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Display system information
+        run: uname -a
+
+      - name: Display current directory
+        run: pwd
